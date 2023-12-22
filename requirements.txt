@@ -1,4 +1,0 @@
-pandas==1.2.1
-smtplib==3.5
-ast==3.5
-email.mime==3.6
