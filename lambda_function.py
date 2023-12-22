@@ -13,6 +13,7 @@ def send_email(subject, body, sender, recipients, password):
 
 def lambda_handler(event, context):
     message = ast.literal_eval(event['Records'][0]['Sns']['Message'])
+    print("Preparing to send message...")
     if message['eventType'] == "BookclubCreate":
         subject = "Book Club Created!"
         body = "Book club created."
